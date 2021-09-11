@@ -1,7 +1,6 @@
 import {React, useState} from 'react';
 import List from './List';
 
-
 function Order(props)
 {
   //state at the top
@@ -32,13 +31,11 @@ function Order(props)
     
   function handleData(e)
   {
-    
-
     console.log(e);
     
     e.preventDefault();
 
-    
+    alert("Order has been placed!");
 
     props.setOrder({
       crust, flavor , size 
