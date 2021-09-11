@@ -1,5 +1,5 @@
 import "./App.css";
-
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import React, { useEffect,useState } from "react";
 import { BrowserRouter,Link, Route, Switch } from 'react-router-dom';
 import Components from "./components/Components";
@@ -9,9 +9,18 @@ import Order from "./components/Order";
 import List from './components/List';
 import Header from './components/Header';
 import Option from "./components/Option";
+import Footer from "./components/Footer";
 function App()
 {
-
+      const [order, setOrder]=useState([]);
+      function addOrder(order)
+      {
+            setOrder( (orders) =>
+            {
+                  orders.push(order);
+                  return [...orders];
+            })
+      }
    
       return(
             <div className="wrapper">
@@ -26,13 +35,14 @@ function App()
 <Option />
       </Route>
             <Route path="/List">
-            <List/>
+            <List order={order} setOrder={addOrder}/>
             </Route>
             <Route path="/Order">
-            <Order/>
+            <Order order={order} setOrder={addOrder}/>
             </Route>
         </Switch>
                </BrowserRouter>
+               <Footer/>
           </div>
     )
       }
