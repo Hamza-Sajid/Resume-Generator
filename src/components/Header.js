@@ -1,18 +1,27 @@
 import React from "react";
-import Order from "./Order";
-function Header(props) {
-  return (
-    <nav className="navbar  navbar-dark bg-dark">
-      <div className="container-fluid">
-        <span
-          className="navbar-brand mb-0 h1 text-center "
-          style={{ textAlign: "center", position: "relative", left: "40%" }}
-        >
-          Pizza Ordering App 🍕
-        </span>
-      </div>
-    </nav>
-  );
+import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
+import { Layout, Menu, Breadcrumb } from 'antd';
+import logo from '../Photos/logo.png';
+
+function Header()
+{
+    const { SubMenu } = Menu;
+
+    const { Header, Content, Footer, Sider } = Layout;
+
+return(
+    <>
+<nav className="navbar navbar-dark bg-dark">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">
+      <img src={logo} alt="" width={30} height={29} className="d-inline-block align-text-top" />
+     <h4 style={{display: 'inline'}}> FlixResume.Io </h4>
+    </a>
+  </div>
+</nav>
+    
+    </>
+)
 }
 
 export default Header;
