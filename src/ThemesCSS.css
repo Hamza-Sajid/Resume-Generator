@@ -1,0 +1,119 @@
+form
+{
+    background-color: red;
+    width: 100%;
+    margin: auto;
+    
+}
+.theme1
+{
+display: flex;
+}
+input
+{
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    left: 35%;
+    padding: 30px;
+}
+
+
+
+.first>img
+{
+    width: 220px;
+    
+}
+
+.first
+{
+    background-color: #253846;
+    width: 100%;
+    height: 720px;
+    text-align: center;
+    
+}
+.bg>h4
+{
+ color: red;
+ text-align: center;
+ margin: 10px;
+}
+.bg>h2
+{
+    padding: 30px;
+}
+.second
+{
+    background-color: teal;
+    position: relative;
+    left: 2%;
+}
+.first>h5
+{
+    color: whitesmoke;
+}
+.second>h3
+{
+    text-align:left;
+    padding: 20px;
+}
+.second>p
+{
+    padding-left: 20px;
+}
+location ,contact ,email
+{
+    color: whitesmoke;
+}
+h2
+{
+    display: block;
+    text-align: center;
+}
+email
+{
+display: block;
+}
+contact
+{
+    display: block;
+}
+location
+{
+    display: block;
+}
+.bg
+{
+    background-color: #F4F4F4;
+    display: block;
+    height: 160px;
+
+    
+}
+h3
+{
+    display: block;
+}
+
+.first h2
+{
+    color: wheat;
+}
+
+hr
+{
+
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+    
+}
