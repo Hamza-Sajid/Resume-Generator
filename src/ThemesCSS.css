@@ -9,7 +9,7 @@ form
 {
 display: flex;
 }
-input
+input[type="text"]
 {
     display: block;
     border: none;
@@ -17,10 +17,13 @@ input
     font-size: 30px;
     font-weight: bold;
     position: relative;
-    left: 35%;
+    left: 25%;
     padding: 30px;
+    color: tomato;
+    width: 60%;
+    height: 80px;
+    border: 2px solid black;
 }
-
 
 
 .first>img
@@ -41,11 +44,12 @@ input
 {
  color: red;
  text-align: center;
- margin: 10px;
+ 
 }
+
 .bg>h2
 {
-    padding: 30px;
+    padding: 10px;
 }
 .second
 {
@@ -117,3 +121,17 @@ hr
     border-width: 3px;
     
 }
+p>input[type=text]
+{
+    color: yellow;
+    width: 100%;
+    position: relative;
+    left: 0;
+    padding: 0;
+    top: -50;
+    height: 80px;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 180px;
+}
+

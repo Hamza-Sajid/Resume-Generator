@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import html2pdf from 'html2pdf.js';
 import App from '../App.css';
-import ds from '../Photos/ds.png';
+import ds from '../Photos/profile.png';
 import CSS from '../ThemesCSS.css';
 
 function Theme1() {
+
+    const [input,setInput]=useState("Enter Your Name");
+    const [title,setTitle]=useState("Job Title?");
+    const [summary,setSummary]=useState("Enter Details");
+
+
 function handle(e)
 {
     
@@ -55,13 +61,13 @@ function handle(e)
 
             <div className="second">
                 <div className="bg">
-<input type="text" value="Enter Name"/>
-<h4>ASSIOIATE SOFWTARE ENGINNER</h4>
+<h3><input type="text" onChange={ (e)=>{setInput(e.target.value)} } value={input}/></h3>
+<h4><input type="text" onChange={ (e)=>{setTitle(e.target.value)} } value={title}/>
+</h4>
+
 </div>
 <h3>Summary</h3>
-<p>lorem idskjflkds j jflksjkfljlkj34klj32lk4jlk32j4lk32j4lkj32lk432 lk4j32lkj4lk32j4k32jlk4j324
-    k2j34kl32jlk4j32lk4j32lj4lk32j4lk32j4lk32j4lkj324kj32lk4jlk32j4lk32j4lk32j4
-    4lkj32lk4j32lk4j32lkj4lk32j4lk32j4lk32j4lkj324lkj32lk4j32lk4j 32j4 lkv2j4lk2 jflksjkfljlkj34klj32lk4jlk32j4lk32j4lkj32lk432
+<p><input type="text" onChange={ (e)=>{setSummary(e.target.value)} } value={summary}/>
 </p>
 
 <h3>Expierance</h3>
