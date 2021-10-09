@@ -2,14 +2,13 @@ import React, { createElement, useState } from "react";
 import html2pdf from 'html2pdf.js';
 import App from '../App.css';
 import ds from '../Photos/profile.png';
+import pdf from '../Photos/pdf.png';
 import CSS from '../ThemesCSS.css';
 import { List } from "rc-field-form";
 
 
 function Theme1(props) {
-    const [input,setInput]=useState("Enter Your Name");
-    const [title,setTitle]=useState("Job Title?");
-    const [summary,setSummary]=useState("Enter Details");
+    
     function skills(e)
     {
         e.preventDefault();
@@ -40,7 +39,7 @@ function para(e)
     
     var a=document.getElementById("list");
     var para = document.createElement("textarea");//make an p element
-        var b=document.createTextNode("Enter your previous experiance's ");
+        var b=document.createTextNode("System Analyst                                  @LGS   __      2012--2015");
         para.appendChild(b);//add the text to the p element
     a.appendChild(para);
 }
@@ -51,7 +50,7 @@ function education(e)
     
     var a=document.getElementById("education");
     var para = document.createElement("textarea");//make an p element
-        var b=document.createTextNode("Enter your previous experiance's ");
+        var b=document.createTextNode(" BS in Computer Networks                      @KUST     2019 _ 2023");
         para.appendChild(b);//add the text to the p element
     a.appendChild(para);
 }
@@ -93,7 +92,8 @@ function handle(e)
     return(
 
         <>
-<h1>Form</h1>
+<h1>Template </h1>
+
         <form id={'element-to-print'}>
             <div className="container theme1">
 
@@ -131,14 +131,15 @@ function handle(e)
                 <div className="bg">
 
                 <div id="name1" contenteditable="true">Name</div>
-                <div id="name" contenteditable="true">Title</div>
+                <div id="name" contenteditable="true">Operations Analyst</div>
 {/* <h3><input type="text" onChange={ (e)=>{setInput(e.target.value)} } value={input}/></h3>
 <h4><input type="text" onChange={ (e)=>{setTitle(e.target.value)} } value={title}/>
 </h4> */}
 
 </div>
 <h3>Summary</h3>
-<p> <div id="firstname" contenteditable="true">Enter summary!</div>
+<p> <div id="firstname" contenteditable="true"  >Example: <br/>Operations analyst with more than three years of experience in order processing, business management and computer services who worked closely with the business team and monitored the accuracy of business process ordering from implementation to execution.
+</div>
 
 </p>
 
@@ -148,9 +149,9 @@ function handle(e)
     </ul>
 
 <h3>Education <button onClick={education}> <h2 className="add-btn">+</h2>  </button></h3>
-<div id="education" className="listDesign">
+<ul id="education" className="listDesign">
 
-    </div>
+    </ul>
                 </div>
    
 
@@ -159,8 +160,13 @@ function handle(e)
 
            </div>
         </form>
-        <button onClick={handle}>Save PDF</button>
+<hr></hr>
+
         
+        <div className="container pdf">
+            <h5>Download Now</h5>
+        <img src={pdf} width="100" onClick={handle}></img>
+            </div>
         </>
     )
 }
