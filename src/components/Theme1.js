@@ -1,15 +1,74 @@
-import React, { useState } from "react";
+import React, { createElement, useState } from "react";
 import html2pdf from 'html2pdf.js';
 import App from '../App.css';
 import ds from '../Photos/profile.png';
 import CSS from '../ThemesCSS.css';
+import { List } from "rc-field-form";
 
-function Theme1() {
 
+function Theme1(props) {
     const [input,setInput]=useState("Enter Your Name");
     const [title,setTitle]=useState("Job Title?");
     const [summary,setSummary]=useState("Enter Details");
+    function skills(e)
+    {
+        e.preventDefault();
+        var skills=document.getElementById("skills");
+        var skill = document.createElement('input');
+        skill.type = "email";
+        skill.placeholder = "Enter Hobbies";
+        skills.appendChild(skill);
 
+    }
+    function languages(e)
+    {
+        e.preventDefault();
+        var languages=document.getElementById("languages");
+        var language = document.createElement('input');
+        language.type = "email";
+        language.placeholder = "Enter Hobbies";
+        
+
+        
+        languages.appendChild(language);
+        
+            // languages.appendChild(languages);
+    }
+function para(e)
+{
+    e.preventDefault();
+    
+    var a=document.getElementById("list");
+    var para = document.createElement("textarea");//make an p element
+        var b=document.createTextNode("Enter your previous experiance's ");
+        para.appendChild(b);//add the text to the p element
+    a.appendChild(para);
+}
+
+function education(e)
+{
+    e.preventDefault();
+    
+    var a=document.getElementById("education");
+    var para = document.createElement("textarea");//make an p element
+        var b=document.createTextNode("Enter your previous experiance's ");
+        para.appendChild(b);//add the text to the p element
+    a.appendChild(para);
+}
+
+function Hobbies(e)
+{
+    e.preventDefault();
+    var aa=document.getElementById("hobbies");
+    var element = document.createElement('input');
+    element.type = "email";
+    element.placeholder = "Enter Hobbies";
+
+
+        var bb=document.createTextNode("Type Hobbies");
+        element.appendChild(bb);//add the text to the p element
+        aa.appendChild(element);   
+}
 
 function handle(e)
 {
@@ -27,7 +86,9 @@ function handle(e)
 
     // html2pdf(element);
 }
-    
+
+
+  
 
     return(
 
@@ -37,45 +98,59 @@ function handle(e)
             <div className="container theme1">
 
         <div className="first">
-            <img src={ds} alt="asd"></img>
+
+                
+            <img src={ds} alt="asd"></img> 
+
             <h2>Contact</h2>
 
-            <email> 📧info@awe.com</email>
-            <contact>📞03421394</contact>
-            <location>📍ISB,PK</location>
+            <email> 📧<input type="email" placeholder="Hamza@server.com" /></email>
+            <contact>📞<input type="contact" placeholder="+92-432412" /></contact>
+            <location>📍<input type="location" placeholder="F-10 - Markaz Isb" /></location>
                 <hr/>
-            <h2>Skills</h2>
+            <h3>Skills <button onClick={skills}><h2 className="add-btn">+</h2></button> </h3>
+            <div id="skills">
+                
+                </div>
+           
 
-            <h5>Purcashing</h5>
-            <h5>Order Managment</h5>
+            <h3>Languages <button onClick={languages} ><h2 className="add-btn">+</h2></button> </h3>
+            <div id="languages">
+                
+                </div>
+           
 
-            <h2>Languages</h2>
-            <h5>Urdu</h5>
-            <h5>English</h5>
-
-            <h2>Hobbies</h2>
-            <h5>Cylcing</h5>
-            <h5>Traacking</h5>
+            <h3>Hobbies  <button onClick={Hobbies}><h2 className="add-btn">+</h2></button>   </h3>
+            <div id="hobbies">
+                </div>
+            
 
             </div>
 
             <div className="second">
                 <div className="bg">
-<h3><input type="text" onChange={ (e)=>{setInput(e.target.value)} } value={input}/></h3>
+
+                <div id="name1" contenteditable="true">Name</div>
+                <div id="name" contenteditable="true">Title</div>
+{/* <h3><input type="text" onChange={ (e)=>{setInput(e.target.value)} } value={input}/></h3>
 <h4><input type="text" onChange={ (e)=>{setTitle(e.target.value)} } value={title}/>
-</h4>
+</h4> */}
 
 </div>
 <h3>Summary</h3>
-<p><input type="text" onChange={ (e)=>{setSummary(e.target.value)} } value={summary}/>
+<p> <div id="firstname" contenteditable="true">Enter summary!</div>
+
 </p>
 
-<h3>Expierance</h3>
-<h4>ASSOSIACTE , Purcashing</h4>
+<h3>Expierance <button onClick={para}> <h2 className="add-btn">+</h2> </button></h3>
+<ul id="list" className="listDesign">
+    
+    </ul>
 
-<p>Deatils are here toksd lfk;ldsakf;lkds;lfksad ;lfkaslfklsakf;lksf;lksa ;f32k432k4k324l;324k32lk432;lk4l;32k4;l32k4;lk32;l4 k32;l4k;lk;lk23 ;l4k2;lk;l23k ;l4k324k32;l4 k2;lk2;lk4 ;l2kk 4;l k2;l4 k;lk;k ;l23 k4;l2k4;lk324;lk32;l4k32 ;l4k;l32</p>
-<h3>Education</h3>
+<h3>Education <button onClick={education}> <h2 className="add-btn">+</h2>  </button></h3>
+<div id="education" className="listDesign">
 
+    </div>
                 </div>
    
 
