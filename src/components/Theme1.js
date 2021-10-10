@@ -160,7 +160,7 @@ function handle(e)
 
            </div>
         </form>
-<hr></hr>
+
 
         
         <div className="container pdf">

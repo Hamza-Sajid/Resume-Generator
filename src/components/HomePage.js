@@ -2,9 +2,13 @@ import React from "react";
 import App from '../App.css';
 import { Carousel } from 'antd';
 import ds from '../Photos/ds.png';
-
-
+import { useHistory } from 'react-router-dom';
+import easy from '../Photos/easy.png';
+import spell from '../Photos/spell.png'
+import themes from '../Photos/theme.png';
 function HomePage(params) {
+    const history = useHistory();
+
     const contentStyle = {
         height: '160px',
         color: '#fff',
@@ -23,19 +27,15 @@ function HomePage(params) {
   <img className="avatar" src="https://resume.io/assets/landing/home/letter-maker/visual-214a0ef480db4fd16f5084887b3dd61a9706d77e243e2407d96a41948ee10024.png"
   width="500" height="400"></img>
 
-<button className="startButton">Create My Resume Now</button>
+<button className="startButton" onClick={()  => history.push('/Options')} >Create My Resume Now</button>
 
 
 <div className="tooltips , container">
-    Use professional field-tested resume templates that follow the exact ‘resume rules’ employers look for. Easy to use and done within minutes - try now for free!
+    <p>Use professional resume templates that follow the exact ‘resume rules’ employers look for. Easy to use and done within minutes - try now for free!</p>
 </div>
 
 
-<div className="examples container">
 
-<img src="https://s3.resume.io/cdn-cgi/image/width=278,dpr=1,format=auto/uploads/local_template_image/image/383/persistent-resource/santiago-resume-templates.jpg"></img>
-<img src="https://s3.resume.io/cdn-cgi/image/width=278,dpr=1,format=auto/uploads/local_template_image/image/160/persistent-resource/berlin-resume-templates.jpg"></img>
-</div>
 
 
 </div>
@@ -52,14 +52,14 @@ function HomePage(params) {
 <h1>Features</h1>
 <div className="features-list">
 <div className="feature">
-    <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="100"/>
+    <img src={easy} width="100" height="80"/>
     <h3>Easy Builder</h3>
     <p>Create a powerful resume profile or cover letter in one click. Writer’s block is no longer an obstacle. Try for free!</p>
 </div>
 
 
 <div className="feature">
-    <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="100"/>
+    <img src={themes} width="50" height="80"/>
     <h3>Approved Templates
  </h3>
     <p>Professionally-designed resume templates and examples (+guides). Just edit and download in 5 minutes.
@@ -70,7 +70,7 @@ function HomePage(params) {
 
 
 <div className="feature">
-    <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" width="100"/>
+    <img src={spell} width="50" height="80"/>
     <h3>Spell-Checker
 </h3>
     <p>Create a powerful resume profile or cover letter in one click. Writer’s block is no longer an obstacle. Try for free!</p>

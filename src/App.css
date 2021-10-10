@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 html
 {
     
 }
+
+h1
+{
+    font-family: 'Raleway', sans-serif;
+
+}
+
 
 div
 {
@@ -20,8 +31,13 @@ h1{
     text-align: center;
     display: block;
     color: rebeccapurple;
+    
 }
-
+.tooltips>p
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+}
 .avatar
 {
     float: right;
@@ -33,15 +49,15 @@ h1{
 {
     margin-top: 15%;
     font-size: 40px;
-    background-color: rgb(90, 209, 90);
+    background-color:rgb(32 42 127);
     border: none;
     border-radius: 50px;
     color: white;
     width: 45%;
     height: 90px;
     box-shadow: 2px 2px 6px 0px black;
+    font-family: 'Roboto Condensed', sans-serif;
     
-
 }
 
 . {

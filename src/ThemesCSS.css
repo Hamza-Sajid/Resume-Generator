@@ -46,6 +46,8 @@ input[type="text"]
     height: 100%;
     text-align: center;
     
+    padding-bottom: 3%;
+    
 }
 .bg>h4
 {
@@ -71,6 +73,8 @@ h1
     width: 100%;
     margin-left: 2%;
     height: 100%;
+    
+    
 }
 .first>h5
 {
@@ -270,4 +274,12 @@ input>[type= text]
         position: relative;
         left: 45%;
         
+    }
+    h5
+    {
+        text-align: center;
+                
+
+        padding-top: 30px;
+
     }
