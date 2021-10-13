@@ -23,7 +23,7 @@ return(
   <Header/> 
 
   
-
+<HomePage/>
   <Switch>
           <Route exact path="/">
             <HomePage />

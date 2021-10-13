@@ -130,6 +130,7 @@ function handle(e)
             <div className="second">
                 <div className="bg">
 
+                
                 <div id="name1" contenteditable="true">Name</div>
                 <div id="name" contenteditable="true">Operations Analyst</div>
 {/* <h3><input type="text" onChange={ (e)=>{setInput(e.target.value)} } value={input}/></h3>
