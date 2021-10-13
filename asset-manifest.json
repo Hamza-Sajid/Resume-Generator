@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Resume-Generator/static/css/main.f9a4fa6b.chunk.css",
-    "main.js": "/Resume-Generator/static/js/main.462c6c9e.chunk.js",
-    "main.js.map": "/Resume-Generator/static/js/main.462c6c9e.chunk.js.map",
-    "runtime-main.js": "/Resume-Generator/static/js/runtime-main.e18d6fe1.js",
-    "runtime-main.js.map": "/Resume-Generator/static/js/runtime-main.e18d6fe1.js.map",
+    "main.js": "/Resume-Generator/static/js/main.6e03a8ff.chunk.js",
+    "main.js.map": "/Resume-Generator/static/js/main.6e03a8ff.chunk.js.map",
+    "runtime-main.js": "/Resume-Generator/static/js/runtime-main.b90dc750.js",
+    "runtime-main.js.map": "/Resume-Generator/static/js/runtime-main.b90dc750.js.map",
     "static/css/2.f4878a83.chunk.css": "/Resume-Generator/static/css/2.f4878a83.chunk.css",
-    "static/js/2.1b15a112.chunk.js": "/Resume-Generator/static/js/2.1b15a112.chunk.js",
-    "static/js/2.1b15a112.chunk.js.map": "/Resume-Generator/static/js/2.1b15a112.chunk.js.map",
-    "static/js/3.86974f7e.chunk.js": "/Resume-Generator/static/js/3.86974f7e.chunk.js",
-    "static/js/3.86974f7e.chunk.js.map": "/Resume-Generator/static/js/3.86974f7e.chunk.js.map",
+    "static/js/2.e37c3b8d.chunk.js": "/Resume-Generator/static/js/2.e37c3b8d.chunk.js",
+    "static/js/2.e37c3b8d.chunk.js.map": "/Resume-Generator/static/js/2.e37c3b8d.chunk.js.map",
+    "static/js/3.aab46217.chunk.js": "/Resume-Generator/static/js/3.aab46217.chunk.js",
+    "static/js/3.aab46217.chunk.js.map": "/Resume-Generator/static/js/3.aab46217.chunk.js.map",
     "static/js/4.1403267c.chunk.js": "/Resume-Generator/static/js/4.1403267c.chunk.js",
     "static/js/4.1403267c.chunk.js.map": "/Resume-Generator/static/js/4.1403267c.chunk.js.map",
     "static/js/5.eae24d5f.chunk.js": "/Resume-Generator/static/js/5.eae24d5f.chunk.js",
@@ -17,8 +17,8 @@
     "index.html": "/Resume-Generator/index.html",
     "static/css/2.f4878a83.chunk.css.map": "/Resume-Generator/static/css/2.f4878a83.chunk.css.map",
     "static/css/main.f9a4fa6b.chunk.css.map": "/Resume-Generator/static/css/main.f9a4fa6b.chunk.css.map",
-    "static/js/2.1b15a112.chunk.js.LICENSE.txt": "/Resume-Generator/static/js/2.1b15a112.chunk.js.LICENSE.txt",
-    "static/js/3.86974f7e.chunk.js.LICENSE.txt": "/Resume-Generator/static/js/3.86974f7e.chunk.js.LICENSE.txt",
+    "static/js/2.e37c3b8d.chunk.js.LICENSE.txt": "/Resume-Generator/static/js/2.e37c3b8d.chunk.js.LICENSE.txt",
+    "static/js/3.aab46217.chunk.js.LICENSE.txt": "/Resume-Generator/static/js/3.aab46217.chunk.js.LICENSE.txt",
     "static/js/4.1403267c.chunk.js.LICENSE.txt": "/Resume-Generator/static/js/4.1403267c.chunk.js.LICENSE.txt",
     "static/media/ds.5385b624.png": "/Resume-Generator/static/media/ds.5385b624.png",
     "static/media/easy.21b6a290.png": "/Resume-Generator/static/media/easy.21b6a290.png",
@@ -34,10 +34,10 @@
     "static/media/twitter.57573394.png": "/Resume-Generator/static/media/twitter.57573394.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e18d6fe1.js",
+    "static/js/runtime-main.b90dc750.js",
     "static/css/2.f4878a83.chunk.css",
-    "static/js/2.1b15a112.chunk.js",
+    "static/js/2.e37c3b8d.chunk.js",
     "static/css/main.f9a4fa6b.chunk.css",
-    "static/js/main.462c6c9e.chunk.js"
+    "static/js/main.6e03a8ff.chunk.js"
   ]
 }
