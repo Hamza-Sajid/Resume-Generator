@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom';
 import easy from '../Photos/easy.png';
 import spell from '../Photos/spell.png'
 import themes from '../Photos/theme.png';
+import Routes from "../Routes";
 function HomePage(params) {
     const history = useHistory();
 
